@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+}
+
+#flex {
+  text-align: center;
+}
+
+button {
+  font-size: 18px;
+  padding: 4px 25px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #003aaa; /* ホバー時の背景色 */
+  color: white; /* ホバー時のテキスト色 */
+}
+
+button:active {
+  background-color: #003aaa; /* クリック時の背景色 */
+}
+
+hr {
+  margin: 15px 10px;
+}
+
+/* Header.js */
+header {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 5px 0;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+/* DogImage.js */
+#randomDogImage {
+  margin: 0 auto;
+  margin-bottom: 11px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Description.js */
+h2 {
+  margin: 11px auto;
+  font-size: 20px;
+}
+
+#updateButton {
+  margin: auto;
+}
+
+/* BreedsSelect.js */
+p {
+  margin: 0;
+}
+
+#dropdown {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  margin-left: 15px;
+  font-size: 20px;
+  height: 30px;
+}
+
+#displayButton {
+  margin-left: 15px;
+}
+
+/* DogImageList.js */
+#imageContainer {
+  margin: 10px;
+  display: flex; /* flex コンテナに設定 */
+  justify-content: center; /* フレックスアイテムを水平方向に中央揃え */
+  flex-wrap: wrap; /* フレックスアイテムを折り返し表示 */
+  gap: 5px; /* 画像と画像の間の幅を一定に保つ */
+}
+
+#dogImageList {
+  flex-basis: 25%; /* フレックスアイテムの幅を均等にする（4つの画像が横に並ぶように設定） */
+  height: 300px;
+  object-fit: cover;
+}
