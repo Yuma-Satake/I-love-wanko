@@ -2,7 +2,7 @@
 import * as React from 'react'
 import { useState } from 'react'
 import { DogImage } from './DogImage'
-import { Button, Container } from '@mui/material'
+import { Container } from '@mui/material'
 
 export const Description = () => {
   const [dogUrl, setDogUrl] = useState(
@@ -22,14 +22,9 @@ export const Description = () => {
       <Container>
         <DogImage url={dogUrl} />
       </Container>
-      <Button
-        variant="contained"
-        type="button"
-        onClick={handleUpdate}
-        id="updateButton"
-      >
+      <button type="button" onClick={handleUpdate} id="updateButton">
         更新
-      </Button>
+      </button>
     </div>
   )
 }
